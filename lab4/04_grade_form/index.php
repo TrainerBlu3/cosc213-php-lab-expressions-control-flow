@@ -32,7 +32,7 @@ $grade = letter_grade($score);
 <head><meta charset="utf-8"><title>Grade Calculator</title></head>
 <body>
   <h1>Grade Calculator</h1>
-  <form>
+  <form method ="get">
     <label>Score (0–100):
       <input name="score" type="number" min="0" max="100"
              value="<?= htmlspecialchars($score !== null ? (string)$score : '') ?>">
@@ -62,11 +62,12 @@ $grade = letter_grade($score);
      echo "<p>Congrats on passing!</p>";
      break;
     case 'D':
-     echo "<p>I know you can do better!<\p>";
+     echo "<p>I know you can do better!</p>";
      break;
     case 'F':
-     echo "<p>Consider office hours for support.<\p>";
+     echo "<p>Consider office hours for support.</p>";
   }
 ?>
+    <?php endif; ?>
 </body>
 </html>
