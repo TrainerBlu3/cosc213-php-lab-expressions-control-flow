@@ -46,6 +46,18 @@ $grade = letter_grade($score);
     <p>Invalid score. Please enter 0–100.</p>
   <?php else: ?>
     <p>Your grade is <strong><?= $grade ?></strong>.</p>
+  <?php if ($grade === 'A+' || $grade === 'A' || $grade === 'A-' ): ?>
+      <p>You're doing wonderfully!</p>
+    <?php endif; ?>
+  <?php if ($grade === 'B+' || $grade === 'B' || $grade === 'B-'): ?>
+      <p>Keep up the good work.</p>
+    <?php endif; ?>
+  <?php if ($grade === 'C'): ?>
+      <p>Congrats on passing!</p>
+    <?php endif; ?>
+  <?php if ($grade === 'D'): ?>
+      <p>I know you can do better!</p>
+    <?php endif; ?>
     <?php if ($grade === 'F'): ?>
       <p>Consider office hours for support.</p>
     <?php endif; ?>
