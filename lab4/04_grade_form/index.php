@@ -4,10 +4,25 @@ $score = $score ?? null;
 
 function letter_grade(?int $s): ?string {
   if ($s === null || $s < 0 || $s > 100) return null;
-  if ($s >= 90) return 'A';
-  if ($s >= 80) return 'B';
-  if ($s >= 70) return 'C';
-  if ($s >= 60) return 'D';
+  
+  if ($s >= 95){
+    return 'A+';
+  }else if($s >= 90){
+    return 'A';
+  }else if($s >= 85){
+    return 'A-';
+  }
+  
+  if ($s >= 80){
+    return 'B+';
+  }else if ($s >= 75){
+    return 'B';
+  }else if ($s >= 70){
+    return 'B-';
+  }
+  
+  if ($s >= 65) return 'C';
+  if ($s >= 55) return 'D';
   return 'F';
 }
 $grade = letter_grade($score);
