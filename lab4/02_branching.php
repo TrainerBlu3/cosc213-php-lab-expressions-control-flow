@@ -3,11 +3,7 @@
 $role = $_GET['role'] ?? 'guest';
 $day = $_GET['day'] ?? 'Mon';
 $code = (int)($_GET['code'] ?? 200);
-$lang = $_GET['lang'] ?? 'en';
 
-function t($en, $fr, $lang) {
-  return $lang === 'fr' ? $fr : $en;
-}
 
 // A) Role greeting with if/elseif/else
 if ($role === 'admin') {
