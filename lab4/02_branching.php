@@ -1,5 +1,4 @@
 <?php
-lang=en|fr;
 // Input via query string: e.g., ?role=admin&day=Sat&code=404
 $role = $_GET['role'] ?? 'guest';
 $day = $_GET['day'] ?? 'Mon';
