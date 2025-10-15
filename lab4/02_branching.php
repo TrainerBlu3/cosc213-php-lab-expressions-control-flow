@@ -37,3 +37,11 @@ case 404: echo "Not Found\n"; break;
 default: echo "Unknown\n";
 }
 }
+
+if($lang == 'en'){
+  echo "Hello there (in English)";
+}else if($lang == 'fr'){
+  echo "Hello there (in French)";
+}else{
+  echo "This language pack is not supported";
+}
