@@ -14,7 +14,7 @@ if ($role === 'admin') {
 }
 
 // C) Status code message (use match if PHP 8+)
-if (function_exists('match)) {
+if (function_exists('match')) {
 $message = match ($code) {
 200, 201 => 'OKish',
 400 => 'Bad Request',
