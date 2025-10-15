@@ -66,6 +66,9 @@ $grade = letter_grade($score);
      break;
     case 'F':
      echo "<p>Consider office hours for support.</p>";
+    default:
+     echo "<p>There is something wrong with your code.</p>";
+     break;
   }
 ?>
     <?php endif; ?>
