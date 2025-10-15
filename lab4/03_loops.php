@@ -37,3 +37,17 @@ for ($i = 1; $i <= 30; $i++) {
   if ($i % 5 === 0) $out .= 'Buzz';
   echo $out !== '' ? $out : $i, PHP_EOL;
 }
+?>
+<!DOCTYPE html>
+<html>
+	<style>table,td,t{border:1px solid}</style>
+	<table>
+		<?php for($i = 1; $i <= 10; $i++): ?>
+			<tr>
+				<?php for($j = 1; $j <= 10; $j++): ?>
+					<td><?php echo $j * $i; ?></td>
+				<?php endfor; ?>
+			</tr>
+		<?php endfor; ?>
+	</table>
+</html>
