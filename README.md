@@ -13,3 +13,4 @@ Parenthesis: Calculates items with rounded brackets, this gives precedence to op
 Strict Comparison: === This would compare 2 values to check if they are both equal and have the same type.
 Loose Comparison: == This would compare 2 values to check only if they are both equal.
 
+One bug that I prevented by using break or continue was in part 4 where if I didn't use break after each case in the "$grade" switch statement at the end, it would run through all of the cases and run all of the echo commands from each case including default.
