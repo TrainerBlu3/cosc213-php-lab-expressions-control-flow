@@ -7,6 +7,7 @@ $lang = $_GET['lang'] ?? 'en';
 
 function t($en, $fr, $lang) {
   return $lang === 'fr' ? $fr : $en;
+}
 
 // A) Role greeting with if/elseif/else
 if ($role === 'admin') {
