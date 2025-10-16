@@ -11,7 +11,7 @@ if ($role === 'admin') {
 } elseif ($role === 'editor') {
   echo "Welcome, editor\n";
 } else {
-  echo "Welcome, use/n";
+  echo "Welcome, use\n";
 }
 
 // C) Status code message (use match if PHP 8+)
